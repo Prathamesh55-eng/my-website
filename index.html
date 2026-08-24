@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prathamesh | VLSI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <h2>Prathamesh</h2>
+
+        <div>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+
+           <button
+    id="themeButton"
+    onclick="
+        document.body.classList.toggle('light-mode');
+        this.textContent =
+        document.body.classList.contains('light-mode')
+        ? '☀️'
+        : '🌙';
+    "
+>
+    🌙
+</button>
+
+        </div>
+
+    </nav>
+
+
+  <!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="hello">
+            HELLO, I'M
+        </p>
+
+        <h1>
+            Prathamesh Shenoy
+        </h1>
+
+        <h2>
+            Aspiring VLSI Engineer
+        </h2>
+
+        <p class="intro">
+            Electronics & Communication Engineering student passionate
+            about VLSI, digital electronics and chip design.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects">
+                <button>
+                    View Projects
+                </button>
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/prathamesh-shenoy-4b609a399/"
+                target="_blank"
+            >
+                <button class="linkedin-button">
+                    LinkedIn
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-photo-card">
+
+        <div class="photo-frame">
+
+            <img
+                src="images\ypotwmlyx0n9tlzfvpwx.jpeg"
+                alt="Prathamesh Shenoy"
+            >
+
+        </div>
+
+        <p class="photo-caption">
+            Electronics & Communication Engineering
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <h2>
+            About Me
+        </h2>
+
+        <p>
+            I am an Electronics and Communication Engineering student
+            currently learning digital electronics, C programming,
+            Verilog, FPGA design and VLSI.
+        </p>
+
+    </section>
+
+
+   <!-- SKILLS -->
+
+<section class="skills" id="skills">
+
+    <p class="section-label">
+        WHAT I WORK WITH
+    </p>
+
+    <h2>
+        Skills & Technologies
+    </h2>
+
+    <p class="skills-intro">
+        Technologies and tools I have worked with through my projects,
+        coursework and technical training.
+    </p>
+
+
+    <div class="skills-grid">
+
+
+        <!-- VLSI & DIGITAL -->
+
+        <div class="skills-card">
+
+            <div class="skills-icon">
+                ⚡
+            </div>
+
+            <div class="skills-card-content">
+
+                <h3>
+                    VLSI & Digital Design
+                </h3>
+
+                <p>
+                    Core digital design concepts and hardware description.
+                </p>
+
+                <div class="skill-tags">
+
+                    <span>Digital Electronics</span>
+                    <span>Verilog</span>
+                    <span>RTL Design</span>
+                    <span>FPGA</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROGRAMMING -->
+
+        <div class="skills-card">
+
+            <div class="skills-icon">
+                💻
+            </div>
+
+            <div class="skills-card-content">
+
+                <h3>
+                    Programming
+                </h3>
+
+                <p>
+                    Programming and logic-building skills for engineering applications.
+                </p>
+
+                <div class="skill-tags">
+
+                    <span>C</span>
+                    <span>MATLAB</span>
+                    <span>Problem Solving</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SIGNAL PROCESSING -->
+
+        <div class="skills-card">
+
+            <div class="skills-icon">
+                📡
+            </div>
+
+            <div class="skills-card-content">
+
+                <h3>
+                    Signal Processing
+                </h3>
+
+                <p>
+                    Simulation and analysis of signals and communication systems.
+                </p>
+
+                <div class="skill-tags">
+
+                    <span>DSP</span>
+                    <span>FIR Filtering</span>
+                    <span>4-PAM</span>
+                    <span>Noise Cancellation</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOOLS -->
+
+        <div class="skills-card">
+
+            <div class="skills-icon">
+                🛠️
+            </div>
+
+            <div class="skills-card-content">
+
+                <h3>
+                    Engineering Tools
+                </h3>
+
+                <p>
+                    Tools used for simulation, modelling and hardware development.
+                </p>
+
+                <div class="skill-tags">
+
+                    <span>Simulink</span>
+                    <span>KiCad</span>
+                    <span>Vivado</span>
+                    <span>MATLAB</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+    <!-- PROJECTS -->
+
+    <section class="projects" id="projects">
+
+        <h2>
+            My Projects
+        </h2>
+
+        <div class="projects-container">
+
+
+            <!-- PROJECT 1 : FOOT DROP -->
+
+            <div class="project-card">
+
+                <h3>
+                    Real-Time Foot Drop Detection and Rehabilitation System Using IMU Sensor
+                </h3>
+
+                <p>
+                    A real-time embedded rehabilitation system that uses
+                    an IMU sensor to monitor foot movement, detect abnormal
+                    gait patterns associated with foot drop, and support
+                    rehabilitation.
+                </p>
+
+                <p class="technologies">
+                    IMU Sensor | Embedded Systems | Signal Processing | Rehabilitation
+                </p>
+
+                <a href="project-footdrop.html">
+                    <button>
+                        View Project
+                    </button>
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 2 : 4-PAM -->
+
+            <div class="project-card">
+
+                <h3>
+                    Noise-Aided Demodulation Using One-Bit Comparator for 4-PAM
+                </h3>
+
+                <p>
+                    A communication systems project exploring noise-aided
+                    demodulation of 4-PAM signals using a one-bit comparator.
+                </p>
+
+                <p class="technologies">
+                    Communication Systems | 4-PAM | Comparator
+                </p>
+
+                <a href="project-4pam.html">
+                    <button>
+                        View Project
+                    </button>
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 3 : DIGITAL LOCK -->
+
+            <div class="project-card">
+
+                <h3>
+                    Digital Lock Using CD4017 IC
+                </h3>
+
+                <p>
+                    A digital security lock designed using the CD4017
+                    decade counter and digital logic.
+                </p>
+
+                <p class="technologies">
+                    CD4017 | Digital Electronics | Logic Gates
+                </p>
+
+                <a href="project-digital-lock.html">
+                    <button>
+                        View Project
+                    </button>
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 4 : WATER DISPENSER -->
+
+            <div class="project-card">
+
+                <h3>
+                    Automatic Water Dispenser
+                </h3>
+
+                <p>
+                    An IoT-based automatic water dispensing system designed
+                    to automate water delivery using sensors and control logic.
+                </p>
+
+                <p class="technologies">
+                    IoT | Sensors | Automation
+                </p>
+
+                <a href="project-water-dispenser.html">
+                    <button>
+                        View Project
+                    </button>
+                </a>
+
+            </div>
+
+
+            <!-- PROJECT 5 : ANC -->
+
+            <div class="project-card">
+
+                <h3>
+                    Adaptive Noise Cancellation Using LMS
+                </h3>
+
+                <p>
+                    An adaptive noise cancellation system implemented using
+                    the LMS filtering technique in MATLAB and Simulink.
+                </p>
+
+                <p class="technologies">
+                    MATLAB | Simulink | LMS Filter | DSP
+                </p>
+
+                <a href="project-anc.html">
+                    <button>
+                        View Project
+                    </button>
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+   <!-- CERTIFICATIONS AND WORKSHOPS -->
+
+<section class="certifications" id="certifications">
+
+    <h2>
+        Certifications & Workshops
+    </h2>
+
+    <div class="certifications-container">
+
+
+        <!-- MATLAB ONRAMP -->
+
+        <div class="certificate-card">
+
+            <img
+                src="certificate-images/matlab-onramp.png"
+                alt="MATLAB Onramp Certificate"
+                class="certificate-preview"
+            >
+
+            <h3>
+                MATLAB Onramp
+            </h3>
+
+            <p class="certificate-type">
+                MathWorks • Certification
+            </p>
+
+            <p>
+                Completed the MATLAB Onramp training.
+            </p>
+
+            <a href="certificates/certificate (3).pdf" target="_blank">
+                <button>
+                    View Certificate
+                </button>
+            </a>
+
+        </div>
+
+
+        <!-- SIMULINK ONRAMP -->
+
+        <div class="certificate-card">
+
+            <img
+                src="certificate-images/simulink-onramp.png"
+                alt="Simulink Onramp Certificate"
+                class="certificate-preview"
+            >
+
+            <h3>
+                Simulink Onramp
+            </h3>
+
+            <p class="certificate-type">
+                MathWorks • Certification
+            </p>
+
+            <p>
+                Completed the Simulink Onramp training.
+            </p>
+
+            <a href="certificates/certificate.pdf" target="_blank">
+                <button>
+                    View Certificate
+                </button>
+            </a>
+
+        </div>
+
+
+        <!-- SIGNAL PROCESSING -->
+
+        <div class="certificate-card">
+
+            <img
+                src="certificate-images/signal-processing.png"
+                alt="Signal Processing Onramp Certificate"
+                class="certificate-preview"
+            >
+
+            <h3>
+                Signal Processing Onramp
+            </h3>
+
+            <p class="certificate-type">
+                MathWorks • Certification
+            </p>
+
+            <p>
+                Completed the Signal Processing Onramp training.
+            </p>
+
+            <a href="certificates/certificate (1).pdf" target="_blank">
+                <button>
+                    View Certificate
+                </button>
+            </a>
+
+        </div>
+
+
+        <!-- SYMBOLIC MATH -->
+
+        <div class="certificate-card">
+
+            <img
+                src="certificate-images/symbolic-math.png"
+                alt="Introduction to Symbolic Math with MATLAB Certificate"
+                class="certificate-preview"
+            >
+
+            <h3>
+                Introduction to Symbolic Math with MATLAB
+            </h3>
+
+            <p class="certificate-type">
+                MathWorks • Certification
+            </p>
+
+            <p>
+                Completed training in symbolic mathematics using MATLAB.
+            </p>
+
+            <a href="certificates/certificate (2).pdf" target="_blank">
+                <button>
+                    View Certificate
+                </button>
+            </a>
+
+        </div>
+
+
+        <!-- AI WORKSHOP -->
+
+        <div class="certificate-card">
+
+            <img
+                src="certificate-images/ai-generative-ai-workshop.png"
+                alt="AI for Students Workshop Certificate"
+                class="certificate-preview"
+            >
+
+            <h3>
+                AI for Students: Build Your Own Generative AI Model
+            </h3>
+
+            <p class="certificate-type">
+                NxtWave • Workshop
+            </p>
+
+            <p>
+                Participated in a workshop focused on Generative AI
+                and building AI models.
+            </p>
+
+            <a href="certificates/QD1ZPHP1ET.png" target="_blank">
+                <button>
+                    View Certificate
+                </button>
+            </a>
+
+        </div>
+
+
+        <!-- REMOTE SENSING -->
+
+        <div class="certificate-card">
+
+            <img
+                src="certificate-images/remote-sensing-workshop.jpg"
+                alt="Remote Sensing and Applications Workshop Certificate"
+                class="certificate-preview"
+            >
+
+            <h3>
+                Remote Sensing and Applications
+            </h3>
+
+            <p class="certificate-type">
+                IEEE / SJEC • Workshop
+            </p>
+
+            <p>
+                Participated in a five-day workshop on
+                Remote Sensing and Applications.
+            </p>
+
+            <a href="certificates/Prathamesh Shenoy Kudpi_.jpg" target="_blank">
+                <button>
+                    View Certificate
+                </button>
+            </a>
+
+        </div>
+
+
+        <!-- CIRCUITCRAFT -->
+
+        <div class="certificate-card">
+
+            <img
+                src="certificate-images/circuitcraft-kicad-workshop.jpg"
+                alt="CircuitCraft 2.0 PCB Design with KiCad Certificate"
+                class="certificate-preview"
+            >
+
+            <h3>
+                CircuitCraft 2.0 – PCB Design with KiCad
+            </h3>
+
+            <p class="certificate-type">
+                SJEC / Samarthya Club • Workshop
+            </p>
+
+            <p>
+                Participated in a three-day hands-on programme
+                focused on PCB design using KiCad.
+            </p>
+
+            <a href="certificates/Prathamesh Shenoy Kudpi_ (1).jpg" target="_blank">
+                <button>
+                    View Certificate
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WEBINARS -->
+
+<section class="certifications" id="webinars">
+
+    <h2>
+        Webinars
+    </h2>
+
+    <div class="certifications-container">
+
+        <div class="certificate-card">
+
+            <img
+                src="certificate-images/knimbus-webinar.png"
+                alt="Knimbus Webinar Certificate"
+                class="certificate-preview"
+            >
+
+            <h3>
+                Remote Access to VTU Consortium E-Resources using Knimbus
+            </h3>
+
+            <p class="certificate-type">
+                Knimbus / VTU Consortium • Webinar
+            </p>
+
+            <p>
+                Participated in a webinar on remote access to
+                VTU Consortium e-resources using Knimbus.
+            </p>
+
+            <a href="certificates/DOC-20260822-WA0000.pdf" target="_blank">
+                <button>
+                    View Certificate
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+   <!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <p class="section-label">
+        GET IN TOUCH
+    </p>
+
+    <h2>
+        Let's Connect
+    </h2>
+
+    <p class="contact-intro">
+        I'm always interested in learning, building projects and
+        connecting with people in the electronics and VLSI space.
+    </p>
+
+    <div class="contact-buttons">
+
+        <a href="mailto:your-email@example.com">
+            <button>
+                📧 Email Me
+            </button>
+        </a>
+
+        <a
+            href="https://www.linkedin.com/in/prathamesh-shenoy-4b609a399/"
+            target="_blank"
+        >
+            <button class="linkedin-button">
+                🔗 LinkedIn
+            </button>
+        </a>
+
+    </div>
+
+</section>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>4-PAM Demodulation | Prathamesh</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="project-header">
+
+        <a href="index.html" class="back-button">
+            ← Back to Portfolio
+        </a>
+
+    </header>
+
+
+    <main class="project-page">
+
+        <!-- PROJECT TITLE -->
+
+        <section class="project-hero">
+
+            <p class="project-category">
+                COMMUNICATION • SIGNAL PROCESSING
+            </p>
+
+            <h1>
+                Noise-Aided Demodulation
+                Using One-Bit Comparator
+                for 4-PAM
+            </h1>
+
+            <p class="project-subtitle">
+                Noise-assisted multilevel signal detection using
+                a one-bit comparator and maximum-likelihood detection
+            </p>
+
+        </section>
+
+
+        <!-- PROJECT IMAGE -->
+
+       <section class="project-image-section">
+
+    <img
+        src="images\4pam-ser-graph.png.png"
+        alt="Noise-Aided 4-PAM Demodulation SER Graph"
+        class="project-main-image"
+    >
+
+    <p class="image-caption">
+        MATLAB simulation results showing Symbol Error Rate
+        for N = 16, 64 and 256 samples per symbol.
+    </p>
+
+</section>
+
+
+        <!-- PROJECT CONTENT -->
+
+        <section class="project-content">
+
+            <h2>About the Project</h2>
+
+            <p>
+                This project explores noise-aided demodulation of
+                multilevel Pulse Amplitude Modulation signals using
+                a one-bit comparator. The focus is on 4-PAM signal
+                detection using the statistical information contained
+                in multiple comparator outputs.
+            </p>
+
+
+            <h2>Problem Statement</h2>
+
+            <p>
+                A conventional one-bit comparator produces only two
+                output levels. Therefore, a single comparator output
+                cannot directly represent all four amplitude levels
+                of a 4-PAM signal.
+            </p>
+
+            <p>
+                The project investigates how noise can be used to
+                make the comparator output stochastic and how the
+                resulting samples can be processed to recover
+                information about the transmitted multilevel symbol.
+            </p>
+
+
+            <h2>4-PAM Signal</h2>
+
+            <p>
+                The four possible transmitted symbols used in the
+                system are:
+            </p>
+
+            <div class="pam-symbols">
+
+                <div>-3A</div>
+                <div>-A</div>
+                <div>+A</div>
+                <div>+3A</div>
+
+            </div>
+
+
+            <h2>How the System Works</h2>
+
+            <div class="workflow">
+
+                <div class="workflow-step">
+
+                    <strong>01</strong>
+
+                    <span>
+                        Generate 4-PAM Signal
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>02</strong>
+
+                    <span>
+                        Add Channel Noise
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>03</strong>
+
+                    <span>
+                        One-Bit Comparator
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>04</strong>
+
+                    <span>
+                        Collect Multiple Samples
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>05</strong>
+
+                    <span>
+                        Calculate Decision Statistic
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>06</strong>
+
+                    <span>
+                        Maximum-Likelihood Detection
+                    </span>
+
+                </div>
+
+
+                <div class="workflow-step">
+
+                    <strong>07</strong>
+
+                    <span>
+                        Recover 4-PAM Symbol
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <h2>Noise-Aided Detection</h2>
+
+            <p>
+                Although the comparator itself produces only two
+                levels, the noise causes its output to switch
+                probabilistically. The statistical behavior of
+                multiple comparator samples contains information
+                about the transmitted amplitude.
+            </p>
+
+            <p>
+                The samples are combined to obtain a decision
+                statistic, which is then used to estimate the most
+                likely transmitted symbol.
+            </p>
+
+
+            <h2>Maximum-Likelihood Detection</h2>
+
+            <p>
+                The receiver estimates the transmitted symbol by
+                selecting the symbol having the highest likelihood
+                for the observed decision statistic.
+            </p>
+
+            <div class="formula-box">
+
+                <p>
+                    Estimated Symbol =
+                </p>
+
+                <strong>
+                    arg max P(y | d)
+                </strong>
+
+            </div>
+
+<h2>MATLAB Implementation</h2>
+
+<p>
+    The complete noise-aided 4-PAM demodulation system was
+    implemented and simulated in MATLAB. The simulation
+    evaluates the Symbol Error Rate for different numbers of
+    samples per symbol and compares the simulated results
+    with the theoretical 4-PAM performance.
+</p>
+
+<div class="code-card">
+
+    <div class="code-card-header">
+
+        <strong>noise_aided_4pam.m</strong>
+
+        <a
+            href="noise_aided_4pam.m"
+            download
+            class="code-button"
+        >
+            ↓ View / Download MATLAB Code
+        </a>
+
+    </div>
+
+    <pre><code>MATLAB implementation included in the project repository.
+
+The simulation includes:
+
+• 4-PAM symbol generation
+• AWGN / noise-aided detection
+• One-bit comparator processing
+• Multiple samples per symbol
+• Decision statistic calculation
+• Maximum-likelihood detection
+• SER calculation
+• Theoretical SER comparison
+
+The complete source code is available through the
+"View / Download MATLAB Code" button above.</code></pre>
+
+</div>
+            <h2>Technologies Used</h2>
+
+            <div class="technology-list">
+
+                <span>MATLAB</span>
+                <span>4-PAM</span>
+                <span>One-Bit Comparator</span>
+                <span>Signal Processing</span>
+                <span>Noise-Aided Detection</span>
+                <span>ML Detection</span>
+
+            </div>
+
+
+            <h2>Key Features</h2>
+
+            <ul class="feature-list">
+
+                <li>
+                    Multilevel 4-PAM signal detection
+                </li>
+
+                <li>
+                    One-bit comparator based receiver
+                </li>
+
+                <li>
+                    Noise-aided signal detection
+                </li>
+
+                <li>
+                    Statistical processing of comparator outputs
+                </li>
+
+                <li>
+                    Maximum-likelihood symbol estimation
+                </li>
+
+                <li>
+                    Analysis of symbol-error performance
+                </li>
+
+            </ul>
+
+
+            <h2>My Contribution</h2>
+
+            <p>
+                Worked on the study, simulation and analysis of
+                noise-aided 4-PAM demodulation using a one-bit
+                comparator and evaluated the signal detection
+                approach.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer class="project-footer">
+
+        <p>
+            © 2026 Prathamesh Shenoy Kudpi
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

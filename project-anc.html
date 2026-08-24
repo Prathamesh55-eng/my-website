@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adaptive Noise Cancellation | Prathamesh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="project-header">
+
+    <a href="index.html" class="back-button">
+        ← Back to Portfolio
+    </a>
+
+</header>
+
+
+<main class="project-page">
+
+<section class="project-hero">
+
+    <p class="project-category">
+        SIGNAL PROCESSING • MATLAB • SIMULINK
+    </p>
+
+    <h1>
+        Adaptive Noise Cancellation
+        Using LMS Filtering
+    </h1>
+
+    <p class="project-subtitle">
+        Adaptive filtering technique for reducing unwanted noise
+        from a desired signal
+    </p>
+
+</section>
+
+
+<section class="project-image-section">
+
+    <h2>Simulink Model</h2>
+
+    <img
+        src="images\anc-overall-simulink-model.png"
+        alt="Overall Adaptive Noise Cancellation Simulink Model"
+        class="project-main-image"
+    >
+    <img
+        src="images\adaptive-noise-cancellation-simulink.png"
+        alt="The Heart of the project"
+        class="project-main-image"
+    >
+
+    <p class="image-caption">
+        Overall MATLAB/Simulink model implementing adaptive noise
+        cancellation using the LMS filtering technique.
+    </p>
+
+</section>
+
+
+<section class="anc-results-section">
+
+    <h2>Simulation Results</h2>
+
+    <p>
+        The simulation results show the frequency spectrum of the
+        original signal, noise, combined noisy signal and the
+        resulting clean signal after adaptive filtering.
+    </p>
+
+    <div class="anc-results-grid">
+
+        <div class="anc-result-card">
+
+            <img
+                src="images/anc-original-signal-spectrum.png"
+                alt="Original Signal Spectrum"
+            >
+
+            <h3>Original Signal</h3>
+
+        </div>
+
+
+        <div class="anc-result-card">
+
+            <img
+                src="images/anc-noise-spectrum.png"
+                alt="Noise Spectrum"
+            >
+
+            <h3>Noise</h3>
+
+        </div>
+
+
+        <div class="anc-result-card">
+
+            <img
+                src="images/anc-noise-plus-signal-spectrum.png"
+                alt="Noise and Signal Spectrum"
+            >
+
+            <h3>Noise + Signal</h3>
+
+        </div>
+
+
+        <div class="anc-result-card">
+
+            <img
+                src="images/anc-clean-signal-spectrum.png"
+                alt="Clean Signal Spectrum"
+            >
+
+            <h3>Clean Signal After LMS Filtering</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="project-content">
+
+<h2>About the Project</h2>
+
+<p>
+    This project implements Adaptive Noise Cancellation using
+    the Least Mean Square (LMS) filtering technique in
+    MATLAB/Simulink. The adaptive filter continuously adjusts
+    its coefficients to reduce unwanted noise from the desired
+    signal.
+</p>
+
+
+<h2>Working Principle</h2>
+
+<p>
+    The system uses a reference noise signal and an adaptive
+    filter. The LMS algorithm continuously updates the filter
+    coefficients based on the error between the desired signal
+    and the estimated noise.
+</p>
+
+
+<h2>System Flow</h2>
+
+<div class="workflow">
+
+    <div class="workflow-step">
+        <strong>01</strong>
+        <span>Input Signal</span>
+    </div>
+
+    <div class="workflow-step">
+        <strong>02</strong>
+        <span>Reference Noise</span>
+    </div>
+
+    <div class="workflow-step">
+        <strong>03</strong>
+        <span>Adaptive LMS Filter</span>
+    </div>
+
+    <div class="workflow-step">
+        <strong>04</strong>
+        <span>Noise Estimation</span>
+    </div>
+
+    <div class="workflow-step">
+        <strong>05</strong>
+        <span>Error Calculation</span>
+    </div>
+
+    <div class="workflow-step">
+        <strong>06</strong>
+        <span>Filtered Output</span>
+    </div>
+
+</div>
+
+
+<h2>LMS Algorithm</h2>
+
+<p>
+    The Least Mean Square algorithm adapts the filter
+    coefficients using the instantaneous error signal.
+    The filter continuously learns the characteristics of
+    the unwanted noise and improves the cancellation process.
+</p>
+
+<div class="formula-box">
+
+    <p>LMS weight update:</p>
+
+    <strong>
+        w(n+1) = w(n) + μ e(n)x(n)
+    </strong>
+
+</div>
+
+
+<h2>Tools Used</h2>
+
+<div class="technology-list">
+
+    <span>MATLAB</span>
+    <span>Simulink</span>
+    <span>LMS Algorithm</span>
+    <span>Adaptive Filtering</span>
+    <span>Digital Signal Processing</span>
+
+</div>
+
+
+<h2>Key Features</h2>
+
+<ul class="feature-list">
+
+    <li>
+        Adaptive noise cancellation using LMS filtering
+    </li>
+
+    <li>
+        Continuous filter coefficient adaptation
+    </li>
+
+    <li>
+        Reference noise based estimation
+    </li>
+
+    <li>
+        Error signal based optimization
+    </li>
+
+    <li>
+        MATLAB/Simulink based implementation
+    </li>
+
+</ul>
+
+
+<h2>My Contribution</h2>
+
+<p>
+    Implemented and simulated the adaptive noise cancellation
+    system using the LMS filtering technique in MATLAB/Simulink
+    and analysed the resulting signal after noise reduction.
+</p>
+
+</section>
+
+</main>
+
+
+<footer class="project-footer">
+
+    <p>© 2026 Prathamesh Shenoy Kudpi</p>
+
+</footer>
+
+</body>
+
+</html>
